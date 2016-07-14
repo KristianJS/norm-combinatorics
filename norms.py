@@ -1,4 +1,4 @@
-from sympy import *
+from sympy import Symbol
 from time import sleep
 from sys import argv
 import sys
