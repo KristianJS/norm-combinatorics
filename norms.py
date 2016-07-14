@@ -166,7 +166,7 @@ def step1_check(case):
 	#This works out value of 1+Nx
 	def determine(N):
     
-    	#At first sight the possible square value of 1+Nx could be anything:
+    		#At first sight the possible square value of 1+Nx could be anything:
 		possible_vals = {1,-1,2,-2,5,-5,10,-10}
 		
 		#We start by constraining 1+Nx based on the values known in C. Each time we loop
@@ -174,17 +174,11 @@ def step1_check(case):
 		#constraints on it
 			
 		known_scalars = [scalar for scalar in [1,2,3,4,5,-1,-2,-3,-4,-5] \
-										   if 1+scalar*x in C]
+								if 1+scalar*x in C]
 		
 		
 		for scalar in known_scalars:
 			if not(N == scalar):
-			
-				#print "1+%dx = %d" % (scalar, C[1+scalar*x])
-				#print "ERROR TEST: "
-				#print N, scalar, C[1+scalar*x], C[x], f(-(N-scalar), C[x]*C[1+scalar*x])
-				#print normul(C[1+scalar*x], Norm(f(-(N-scalar), C[x]*C[1+scalar*x])))
-				
 				possible_vals = possible_vals.intersection(\
 				                              norm_com(C[x], C[1+scalar*x], N, scalar))
 			else:
@@ -204,19 +198,12 @@ def step1_check(case):
 		#If the existing constraints from C already determine the value of 1+Nx, we are
 		#done:
 		
-		#print "Possible values of 1+%dx are: " % N + str(possible_vals_list)
-		
 		if len(possible_vals_list) == 1:
-		
-			#print "Didn't need to do anything extra! 1+%dx must be in " % N \
-			#	   + str(possible_vals_list) 
-				   
 			return possible_vals_list
 			
 		#Otherwise we need to do the extra computations as indicated above.
 			
 		else:	
-			#print "1+%dx must be in " % N + str([ps for ps in possible_vals])
 
 			#The strategy is as follows: our constraints have given us some number of
 			#possible values for 1+Nx. For each such value, we look at what constraints
@@ -250,11 +237,6 @@ def step1_check(case):
 				
 				constraint_list = list(constraints)
 			
-			
-				#print "Given 1+%dx=%d, 1+%dx must be in " % (N,val, N+1) + \
-				#		str(constraint_list)
-				#print "Let's check each possibility in turn."
-				
 				cases_tested = 0
 				
 				#Now we loop through possible values of 1+(N+1)x
@@ -304,10 +286,6 @@ def step1_check(case):
 					#Otherwise we have found a contradiction, so we update our
 					#cases_tested to reflect this
 					else:
-					#	print "Contradiction obtained! 1+%dx can't be %r. Contradiction \
-					#         was found by considering: " % (N+1,val_2) \
-					#		+ str(contradictions)	
-				
 						cases_tested += 1
 				
 				#If we have obtained a contradiction in all cases, we have ruled out
@@ -324,9 +302,6 @@ def step1_check(case):
 				else:
 					constrained_vals_N.append(val)
 			
-		
-			#print "Conclusion: 1+%dx must be in " % N + str(constrained_vals_N)	
-			#print C				
 			return constrained_vals_N	
 
 
@@ -359,7 +334,6 @@ def step1_check(case):
 			print "Positive values: " + str(forced_positive_values)
 		else:
 			pass	
-		#print C
 
 
 
@@ -379,7 +353,6 @@ def step1_check(case):
 			else:
 				sys.exit("Error: failed to constrain value!")
 					
-			#new_neg = determine(S)[0]
 			forced_negative_values.append(new_neg)
 			C[1+S*x] = new_neg
 	
@@ -387,7 +360,6 @@ def step1_check(case):
 			print "Negative values: " + str(forced_negative_values)
 		else:
 			pass	
-		#print C
 
 	def all_forced_values():
 
@@ -407,21 +379,6 @@ def step1_cases(case):
 	return step1_check(case)
 	
 	
-
-
-#-----------------------------------------------------------------------------------#
-
-
-#step1_check({x : 2, 1+x : 1})
-#step1_check({x : 2, 1+x : -5})
-#step1_check({x : -2, 1+x : 1})
-#step1_check({x : -2, 1+x : -1})
-#step1_check({x : 10, 1+x : 1})
-#step1_check({x : 10, 1+x : -5})
-#step1_check({x : -10, 1+x : 1})
-#step1_check({x : -10, 1+x : -1})
-
-
 	
 
 #---------------------------------------------------------------------------------#
@@ -440,7 +397,7 @@ def step2_check(case):
 	
 	D = step1_cases(case)
 	
-	#In case you want to explicitly see what these area in the output, unhash the next 
+	#In case you want to explicitly see what these are in the output, unhash the next 
 	#line:
 	
 	#print D
@@ -485,7 +442,6 @@ def step2_check(case):
 		new_pos_frac = determine_frac(5)
 		actual_new_pos_frac = [f(5,value) for value in new_pos_frac]
 		
-		#print "Value of 5+x is in " + str(new_pos_frac)	
 		if step == 'a':
 			print "Value of 1+x/5 is in " + str(actual_new_pos_frac)
 		else:
@@ -504,7 +460,6 @@ def step2_check(case):
 		new_neg_frac = determine_frac(-5)
 		actual_new_neg_frac = [f(-5,value) for value in new_neg_frac]
 		
-		#print "Value of -5+x is in " + str(new_neg_frac)
 		if step == 'a':
 			print "Value of 1-x/5 is in " + str(actual_new_neg_frac)
 		else:
@@ -583,12 +538,6 @@ def decomposition_a(x, y, a, b, c):
 	intersection_2 = intersection_1.intersection(set(constraint_3))
 	
 	return list(intersection_2)
-
-
-#print f(-1,(-1)*(-5)*1*(-10))
-#print normul(-1, Norm(f(-1, (-1)*(-5)*1*(-10))))	
-#print decomposition_a(2, -10, 1, -1, -5)
-#{x : 2, 1+x : -5}, {x : -10, 1+x : -1}
 
 
 
@@ -672,41 +621,8 @@ def main2():
 
 
 
-def main():
-	
-	sleep(0.5)
-	
-	print "BEGINNING PROOF VERIFICATION"
-	
-	sleep(1.0)
-	
-	print "First we compute, for each possible case of x in O_1,"\
-		   +" the values of 1+kx, for k = -5, -4, ..., 5, 1/5, -1/5"
-	print 40*"="
-	
-	sleep(5.0)
-	
-	main1()
-	
-	print 40*"="
-	
-	sleep(5.0)
-	
-	print "Next, we compute the values of 1-xy for all possible choices of $x,y in O_1$"
-	
-	sleep(3.0)
-	
-	main2()
-	
-	sleep(2.0)
-	
-	print "PROOF COMPLETE"
-	print 40*"="
-	
 
-#main1()
-
-#main2()	 
+#Finally we specify what 'a' and 'b' should do.
 
 if step == 'a':
 	main1()
@@ -719,11 +635,6 @@ else:
 	
 	
 	
-		   
+#Upon running we see that both parts of the program run, verifying the proof.		   
 	
 	
-	
-
-
-
-
