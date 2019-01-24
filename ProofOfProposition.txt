@@ -44,10 +44,10 @@ Norm combinatorics shows that in this case we have the following:
 
 Now we will intersect the constraints coming from the a-decomposition (a=1,-1,5,-5).
 
-    Constraint from 1-decomposition: [1, 2, -1, -2]
-    Constraint from -1-decomposition: [1, 2, -5, -10]
-    Constraint from 5-decomposition: [1, 10, -1, -10]
-    Constraint from -5-decomposition: [1, 10, -5, -2]
+    Constraint from D_{1}(x,y): [1, 2, -1, -2]
+    Constraint from D_{-1}(x,y): [1, 2, -5, -10]
+    Constraint from D_{5}(x,y): [1, 10, -1, -10]
+    Constraint from D_{-5}(x,y): [1, 10, -5, -2]
 
 Intersecting all of these shows that 1-xy is in [1].
 This is a subset of N(5)! Hence 1-xy is in N(5)
@@ -84,10 +84,10 @@ Norm combinatorics shows that in this case we have the following:
 
 Now we will intersect the constraints coming from the a-decomposition (a=1,-1,5,-5).
 
-    Constraint from 1-decomposition: [1, 10, -5, -2]
-    Constraint from -1-decomposition: [1, 2, -1, -2]
-    Constraint from 5-decomposition: [1, 2, -5, -10]
-    Constraint from -5-decomposition: [1, 10, -1, -10]
+    Constraint from D_{1}(x,y): [1, 10, -5, -2]
+    Constraint from D_{-1}(x,y): [1, 2, -1, -2]
+    Constraint from D_{5}(x,y): [1, 2, -5, -10]
+    Constraint from D_{-5}(x,y): [1, 10, -1, -10]
 
 Intersecting all of these shows that 1-xy is in [1].
 This is a subset of N(5)! Hence 1-xy is in N(5)
@@ -124,10 +124,10 @@ Norm combinatorics shows that in this case we have the following:
 
 Now we will intersect the constraints coming from the a-decomposition (a=1,-1,5,-5).
 
-    Constraint from 1-decomposition: [1, 2]
-    Constraint from -1-decomposition: [1, 2]
-    Constraint from 5-decomposition: [1, 10]
-    Constraint from -5-decomposition: [1, 10]
+    Constraint from D_{1}(x,y): [1, 2]
+    Constraint from D_{-1}(x,y): [1, 2]
+    Constraint from D_{5}(x,y): [1, 10]
+    Constraint from D_{-5}(x,y): [1, 10]
 
 Intersecting all of these shows that 1-xy is in [1].
 This is a subset of N(5)! Hence 1-xy is in N(5)
@@ -164,10 +164,10 @@ Norm combinatorics shows that in this case we have the following:
 
 Now we will intersect the constraints coming from the a-decomposition (a=1,-1,5,-5).
 
-    Constraint from 1-decomposition: [1, 2]
-    Constraint from -1-decomposition: [1, 10]
-    Constraint from 5-decomposition: [1, 10]
-    Constraint from -5-decomposition: [1, 2]
+    Constraint from D_{1}(x,y): [1, 2]
+    Constraint from D_{-1}(x,y): [1, 10]
+    Constraint from D_{5}(x,y): [1, 10]
+    Constraint from D_{-5}(x,y): [1, 2]
 
 Intersecting all of these shows that 1-xy is in [1].
 This is a subset of N(5)! Hence 1-xy is in N(5)
@@ -204,10 +204,10 @@ Norm combinatorics shows that in this case we have the following:
 
 Now we will intersect the constraints coming from the a-decomposition (a=1,-1,5,-5).
 
-    Constraint from 1-decomposition: [1, -1]
-    Constraint from -1-decomposition: [1, -5]
-    Constraint from 5-decomposition: [1, -1]
-    Constraint from -5-decomposition: [1, -5]
+    Constraint from D_{1}(x,y): [1, -1]
+    Constraint from D_{-1}(x,y): [1, -5]
+    Constraint from D_{5}(x,y): [1, -1]
+    Constraint from D_{-5}(x,y): [1, -5]
 
 Intersecting all of these shows that 1-xy is in [1].
 This is a subset of N(5)! Hence 1-xy is in N(5)
@@ -244,10 +244,10 @@ Norm combinatorics shows that in this case we have the following:
 
 Now we will intersect the constraints coming from the a-decomposition (a=1,-1,5,-5).
 
-    Constraint from 1-decomposition: [1, -5]
-    Constraint from -1-decomposition: [1, -1]
-    Constraint from 5-decomposition: [1, -5]
-    Constraint from -5-decomposition: [1, -1]
+    Constraint from D_{1}(x,y): [1, -5]
+    Constraint from D_{-1}(x,y): [1, -1]
+    Constraint from D_{5}(x,y): [1, -5]
+    Constraint from D_{-5}(x,y): [1, -1]
 
 Intersecting all of these shows that 1-xy is in [1].
 This is a subset of N(5)! Hence 1-xy is in N(5)
@@ -284,10 +284,10 @@ Norm combinatorics shows that in this case we have the following:
 
 Now we will intersect the constraints coming from the a-decomposition (a=1,-1,5,-5).
 
-    Constraint from 1-decomposition: [1, -2]
-    Constraint from -1-decomposition: [1, -10]
-    Constraint from 5-decomposition: [1, -10]
-    Constraint from -5-decomposition: [1, -2]
+    Constraint from D_{1}(x,y): [1, -2]
+    Constraint from D_{-1}(x,y): [1, -10]
+    Constraint from D_{5}(x,y): [1, -10]
+    Constraint from D_{-5}(x,y): [1, -2]
 
 Intersecting all of these shows that 1-xy is in [1].
 This is a subset of N(5)! Hence 1-xy is in N(5)
@@ -324,10 +324,10 @@ Norm combinatorics shows that in this case we have the following:
 
 Now we will intersect the constraints coming from the a-decomposition (a=1,-1,5,-5).
 
-    Constraint from 1-decomposition: [1, -10]
-    Constraint from -1-decomposition: [1, -10]
-    Constraint from 5-decomposition: [1, -2]
-    Constraint from -5-decomposition: [1, -2]
+    Constraint from D_{1}(x,y): [1, -10]
+    Constraint from D_{-1}(x,y): [1, -10]
+    Constraint from D_{5}(x,y): [1, -2]
+    Constraint from D_{-5}(x,y): [1, -2]
 
 Intersecting all of these shows that 1-xy is in [1].
 This is a subset of N(5)! Hence 1-xy is in N(5)
@@ -364,10 +364,10 @@ Norm combinatorics shows that in this case we have the following:
 
 Now we will intersect the constraints coming from the a-decomposition (a=1,-1,5,-5).
 
-    Constraint from 1-decomposition: [10, -5, 5, -10]
-    Constraint from -1-decomposition: [10, -1, -2, 5]
-    Constraint from 5-decomposition: [2, -5, 5, -2]
-    Constraint from -5-decomposition: [-1, 2, 5, -10]
+    Constraint from D_{1}(x,y): [10, -5, 5, -10]
+    Constraint from D_{-1}(x,y): [10, -1, -2, 5]
+    Constraint from D_{5}(x,y): [2, -5, 5, -2]
+    Constraint from D_{-5}(x,y): [-1, 2, 5, -10]
 
 Intersecting all of these shows that 1-xy is in [5].
 This is a subset of N(5)! Hence 1-xy is in N(5)
@@ -404,10 +404,10 @@ Norm combinatorics shows that in this case we have the following:
 
 Now we will intersect the constraints coming from the a-decomposition (a=1,-1,5,-5).
 
-    Constraint from 1-decomposition: [1, 10]
-    Constraint from -1-decomposition: [1, 2]
-    Constraint from 5-decomposition: [1, 2]
-    Constraint from -5-decomposition: [1, 10]
+    Constraint from D_{1}(x,y): [1, 10]
+    Constraint from D_{-1}(x,y): [1, 2]
+    Constraint from D_{5}(x,y): [1, 2]
+    Constraint from D_{-5}(x,y): [1, 10]
 
 Intersecting all of these shows that 1-xy is in [1].
 This is a subset of N(5)! Hence 1-xy is in N(5)
@@ -444,10 +444,10 @@ Norm combinatorics shows that in this case we have the following:
 
 Now we will intersect the constraints coming from the a-decomposition (a=1,-1,5,-5).
 
-    Constraint from 1-decomposition: [2, 5]
-    Constraint from -1-decomposition: [2, 5]
-    Constraint from 5-decomposition: [10, 5]
-    Constraint from -5-decomposition: [10, 5]
+    Constraint from D_{1}(x,y): [2, 5]
+    Constraint from D_{-1}(x,y): [2, 5]
+    Constraint from D_{5}(x,y): [10, 5]
+    Constraint from D_{-5}(x,y): [10, 5]
 
 Intersecting all of these shows that 1-xy is in [5].
 This is a subset of N(5)! Hence 1-xy is in N(5)
@@ -484,10 +484,10 @@ Norm combinatorics shows that in this case we have the following:
 
 Now we will intersect the constraints coming from the a-decomposition (a=1,-1,5,-5).
 
-    Constraint from 1-decomposition: [1, -5]
-    Constraint from -1-decomposition: [1, -1]
-    Constraint from 5-decomposition: [1, -5]
-    Constraint from -5-decomposition: [1, -1]
+    Constraint from D_{1}(x,y): [1, -5]
+    Constraint from D_{-1}(x,y): [1, -1]
+    Constraint from D_{5}(x,y): [1, -5]
+    Constraint from D_{-5}(x,y): [1, -1]
 
 Intersecting all of these shows that 1-xy is in [1].
 This is a subset of N(5)! Hence 1-xy is in N(5)
@@ -524,10 +524,10 @@ Norm combinatorics shows that in this case we have the following:
 
 Now we will intersect the constraints coming from the a-decomposition (a=1,-1,5,-5).
 
-    Constraint from 1-decomposition: [-5, 5]
-    Constraint from -1-decomposition: [5, -1]
-    Constraint from 5-decomposition: [-5, 5]
-    Constraint from -5-decomposition: [5, -1]
+    Constraint from D_{1}(x,y): [-5, 5]
+    Constraint from D_{-1}(x,y): [5, -1]
+    Constraint from D_{5}(x,y): [-5, 5]
+    Constraint from D_{-5}(x,y): [5, -1]
 
 Intersecting all of these shows that 1-xy is in [5].
 This is a subset of N(5)! Hence 1-xy is in N(5)
@@ -564,10 +564,10 @@ Norm combinatorics shows that in this case we have the following:
 
 Now we will intersect the constraints coming from the a-decomposition (a=1,-1,5,-5).
 
-    Constraint from 1-decomposition: [1, -2]
-    Constraint from -1-decomposition: [1, -2]
-    Constraint from 5-decomposition: [1, -10]
-    Constraint from -5-decomposition: [1, -10]
+    Constraint from D_{1}(x,y): [1, -2]
+    Constraint from D_{-1}(x,y): [1, -2]
+    Constraint from D_{5}(x,y): [1, -10]
+    Constraint from D_{-5}(x,y): [1, -10]
 
 Intersecting all of these shows that 1-xy is in [1].
 This is a subset of N(5)! Hence 1-xy is in N(5)
@@ -604,10 +604,10 @@ Norm combinatorics shows that in this case we have the following:
 
 Now we will intersect the constraints coming from the a-decomposition (a=1,-1,5,-5).
 
-    Constraint from 1-decomposition: [5, -2]
-    Constraint from -1-decomposition: [5, -10]
-    Constraint from 5-decomposition: [5, -10]
-    Constraint from -5-decomposition: [5, -2]
+    Constraint from D_{1}(x,y): [5, -2]
+    Constraint from D_{-1}(x,y): [5, -10]
+    Constraint from D_{5}(x,y): [5, -10]
+    Constraint from D_{-5}(x,y): [5, -2]
 
 Intersecting all of these shows that 1-xy is in [5].
 This is a subset of N(5)! Hence 1-xy is in N(5)

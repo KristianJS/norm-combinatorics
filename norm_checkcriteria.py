@@ -180,7 +180,7 @@ def check_valuation_criterion(case_x, case_y, casenums, outfile):
     
         #Constraint from the a-decomposition
         new_constraint = decomposition_a(C_x[x], C_y[y], a, C_y[1+a*y], C_x[1+a*x])
-        f.write("    Constraint from %s-decomposition: %s\n" % (a, list(new_constraint)))
+        f.write("    Constraint from D_{%s}(x,y): %s\n" % (a, list(new_constraint)))
         
         possible_vals = possible_vals.intersection(set(new_constraint))
         
