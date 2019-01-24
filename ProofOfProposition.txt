@@ -1,0 +1,620 @@
+====================================================================================================
+====================================================================================================
+====================================================================================================
+
+                                   PROOF OF PROPOSITION 4.6
+
+====================================================================================================
+====================================================================================================
+====================================================================================================
+We need to show that for every possible pair of x,y in O_1, the value of 1-xy is in N(5).
+We proceed case by case.
+Recall, as explained in the paper, we can WLOG assume x ~ 2.
+Therefore, the following cases are indeed exhaustive.
+====================================================================================================
+                   CASE CONSIDERED: x~2, 1+x~1, y~2, 1+y~1
+====================================================================================================
+GOAL: check if 1-xy is necessarily in N(5).
+----------------------------------------------------------------------------------------------------
+Norm combinatorics shows that in this case we have the following:
+
+    5*x + 1 ~ 1
+    2*x + 1 ~ 1
+    x/5 + 1 ~ 1
+    -x + 1 ~ 1
+    -2*x + 1 ~ 1
+    -4*x + 1 ~ 1
+    -3*x + 1 ~ 1
+    3*x + 1 ~ 1
+    -x/5 + 1 ~ 1
+    -5*x + 1 ~ 1
+    4*x + 1 ~ 1
+
+    -2*y + 1 ~ 1
+    -5*y + 1 ~ 1
+    -3*y + 1 ~ 1
+    3*y + 1 ~ 1
+    -y + 1 ~ 1
+    -4*y + 1 ~ 1
+    2*y + 1 ~ 1
+    5*y + 1 ~ 1
+    4*y + 1 ~ 1
+
+(see the files DetermineValuesCase1.txt and DetermineValuesCase1.txt for details)
+
+Now we will intersect the constraints coming from the a-decomposition (a=1,-1,5,-5).
+
+    Constraint from 1-decomposition: [1, 2, -1, -2]
+    Constraint from -1-decomposition: [1, 2, -5, -10]
+    Constraint from 5-decomposition: [1, 10, -1, -10]
+    Constraint from -5-decomposition: [1, 10, -5, -2]
+
+Intersecting all of these shows that 1-xy is in [1].
+This is a subset of N(5)! Hence 1-xy is in N(5)
+====================================================================================================
+                   CASE CONSIDERED: x~2, 1+x~1, y~2, 1+y~-5
+====================================================================================================
+GOAL: check if 1-xy is necessarily in N(5).
+----------------------------------------------------------------------------------------------------
+Norm combinatorics shows that in this case we have the following:
+
+    5*x + 1 ~ 1
+    2*x + 1 ~ 1
+    x/5 + 1 ~ 1
+    -x + 1 ~ 1
+    -2*x + 1 ~ 1
+    -4*x + 1 ~ 1
+    -3*x + 1 ~ 1
+    3*x + 1 ~ 1
+    -x/5 + 1 ~ 1
+    -5*x + 1 ~ 1
+    4*x + 1 ~ 1
+
+    -2*y + 1 ~ 5
+    -5*y + 1 ~ -1
+    -3*y + 1 ~ -5
+    3*y + 1 ~ -1
+    -y + 1 ~ -1
+    -4*y + 1 ~ 1
+    2*y + 1 ~ 5
+    5*y + 1 ~ -5
+    4*y + 1 ~ 1
+
+(see the files DetermineValuesCase1.txt and DetermineValuesCase2.txt for details)
+
+Now we will intersect the constraints coming from the a-decomposition (a=1,-1,5,-5).
+
+    Constraint from 1-decomposition: [1, 10, -5, -2]
+    Constraint from -1-decomposition: [1, 2, -1, -2]
+    Constraint from 5-decomposition: [1, 2, -5, -10]
+    Constraint from -5-decomposition: [1, 10, -1, -10]
+
+Intersecting all of these shows that 1-xy is in [1].
+This is a subset of N(5)! Hence 1-xy is in N(5)
+====================================================================================================
+                   CASE CONSIDERED: x~2, 1+x~1, y~-2, 1+y~1
+====================================================================================================
+GOAL: check if 1-xy is necessarily in N(5).
+----------------------------------------------------------------------------------------------------
+Norm combinatorics shows that in this case we have the following:
+
+    5*x + 1 ~ 1
+    2*x + 1 ~ 1
+    x/5 + 1 ~ 1
+    -x + 1 ~ 1
+    -2*x + 1 ~ 1
+    -4*x + 1 ~ 1
+    -3*x + 1 ~ 1
+    3*x + 1 ~ 1
+    -x/5 + 1 ~ 1
+    -5*x + 1 ~ 1
+    4*x + 1 ~ 1
+
+    -2*y + 1 ~ 1
+    -5*y + 1 ~ 1
+    -3*y + 1 ~ 1
+    3*y + 1 ~ 1
+    -y + 1 ~ 1
+    -4*y + 1 ~ 1
+    2*y + 1 ~ 1
+    5*y + 1 ~ 1
+    4*y + 1 ~ 1
+
+(see the files DetermineValuesCase1.txt and DetermineValuesCase3.txt for details)
+
+Now we will intersect the constraints coming from the a-decomposition (a=1,-1,5,-5).
+
+    Constraint from 1-decomposition: [1, 2]
+    Constraint from -1-decomposition: [1, 2]
+    Constraint from 5-decomposition: [1, 10]
+    Constraint from -5-decomposition: [1, 10]
+
+Intersecting all of these shows that 1-xy is in [1].
+This is a subset of N(5)! Hence 1-xy is in N(5)
+====================================================================================================
+                   CASE CONSIDERED: x~2, 1+x~1, y~-2, 1+y~-1
+====================================================================================================
+GOAL: check if 1-xy is necessarily in N(5).
+----------------------------------------------------------------------------------------------------
+Norm combinatorics shows that in this case we have the following:
+
+    5*x + 1 ~ 1
+    2*x + 1 ~ 1
+    x/5 + 1 ~ 1
+    -x + 1 ~ 1
+    -2*x + 1 ~ 1
+    -4*x + 1 ~ 1
+    -3*x + 1 ~ 1
+    3*x + 1 ~ 1
+    -x/5 + 1 ~ 1
+    -5*x + 1 ~ 1
+    4*x + 1 ~ 1
+
+    -2*y + 1 ~ 5
+    -5*y + 1 ~ -5
+    -3*y + 1 ~ -1
+    3*y + 1 ~ -5
+    -y + 1 ~ -5
+    -4*y + 1 ~ 1
+    2*y + 1 ~ 5
+    5*y + 1 ~ -1
+    4*y + 1 ~ 1
+
+(see the files DetermineValuesCase1.txt and DetermineValuesCase4.txt for details)
+
+Now we will intersect the constraints coming from the a-decomposition (a=1,-1,5,-5).
+
+    Constraint from 1-decomposition: [1, 2]
+    Constraint from -1-decomposition: [1, 10]
+    Constraint from 5-decomposition: [1, 10]
+    Constraint from -5-decomposition: [1, 2]
+
+Intersecting all of these shows that 1-xy is in [1].
+This is a subset of N(5)! Hence 1-xy is in N(5)
+====================================================================================================
+                   CASE CONSIDERED: x~2, 1+x~1, y~10, 1+y~1
+====================================================================================================
+GOAL: check if 1-xy is necessarily in N(5).
+----------------------------------------------------------------------------------------------------
+Norm combinatorics shows that in this case we have the following:
+
+    5*x + 1 ~ 1
+    2*x + 1 ~ 1
+    x/5 + 1 ~ 1
+    -x + 1 ~ 1
+    -2*x + 1 ~ 1
+    -4*x + 1 ~ 1
+    -3*x + 1 ~ 1
+    3*x + 1 ~ 1
+    -x/5 + 1 ~ 1
+    -5*x + 1 ~ 1
+    4*x + 1 ~ 1
+
+    -2*y + 1 ~ 1
+    -5*y + 1 ~ 1
+    -3*y + 1 ~ 1
+    3*y + 1 ~ 1
+    -y + 1 ~ 1
+    -4*y + 1 ~ 1
+    2*y + 1 ~ 1
+    5*y + 1 ~ 1
+    4*y + 1 ~ 1
+
+(see the files DetermineValuesCase1.txt and DetermineValuesCase5.txt for details)
+
+Now we will intersect the constraints coming from the a-decomposition (a=1,-1,5,-5).
+
+    Constraint from 1-decomposition: [1, -1]
+    Constraint from -1-decomposition: [1, -5]
+    Constraint from 5-decomposition: [1, -1]
+    Constraint from -5-decomposition: [1, -5]
+
+Intersecting all of these shows that 1-xy is in [1].
+This is a subset of N(5)! Hence 1-xy is in N(5)
+====================================================================================================
+                   CASE CONSIDERED: x~2, 1+x~1, y~10, 1+y~-5
+====================================================================================================
+GOAL: check if 1-xy is necessarily in N(5).
+----------------------------------------------------------------------------------------------------
+Norm combinatorics shows that in this case we have the following:
+
+    5*x + 1 ~ 1
+    2*x + 1 ~ 1
+    x/5 + 1 ~ 1
+    -x + 1 ~ 1
+    -2*x + 1 ~ 1
+    -4*x + 1 ~ 1
+    -3*x + 1 ~ 1
+    3*x + 1 ~ 1
+    -x/5 + 1 ~ 1
+    -5*x + 1 ~ 1
+    4*x + 1 ~ 1
+
+    -2*y + 1 ~ 5
+    -5*y + 1 ~ -1
+    -3*y + 1 ~ -5
+    3*y + 1 ~ -1
+    -y + 1 ~ -1
+    -4*y + 1 ~ 1
+    2*y + 1 ~ 5
+    5*y + 1 ~ -5
+    4*y + 1 ~ 1
+
+(see the files DetermineValuesCase1.txt and DetermineValuesCase6.txt for details)
+
+Now we will intersect the constraints coming from the a-decomposition (a=1,-1,5,-5).
+
+    Constraint from 1-decomposition: [1, -5]
+    Constraint from -1-decomposition: [1, -1]
+    Constraint from 5-decomposition: [1, -5]
+    Constraint from -5-decomposition: [1, -1]
+
+Intersecting all of these shows that 1-xy is in [1].
+This is a subset of N(5)! Hence 1-xy is in N(5)
+====================================================================================================
+                   CASE CONSIDERED: x~2, 1+x~1, y~-10, 1+y~1
+====================================================================================================
+GOAL: check if 1-xy is necessarily in N(5).
+----------------------------------------------------------------------------------------------------
+Norm combinatorics shows that in this case we have the following:
+
+    5*x + 1 ~ 1
+    2*x + 1 ~ 1
+    x/5 + 1 ~ 1
+    -x + 1 ~ 1
+    -2*x + 1 ~ 1
+    -4*x + 1 ~ 1
+    -3*x + 1 ~ 1
+    3*x + 1 ~ 1
+    -x/5 + 1 ~ 1
+    -5*x + 1 ~ 1
+    4*x + 1 ~ 1
+
+    -2*y + 1 ~ 1
+    -5*y + 1 ~ 1
+    -3*y + 1 ~ 1
+    3*y + 1 ~ 1
+    -y + 1 ~ 1
+    -4*y + 1 ~ 1
+    2*y + 1 ~ 1
+    5*y + 1 ~ 1
+    4*y + 1 ~ 1
+
+(see the files DetermineValuesCase1.txt and DetermineValuesCase7.txt for details)
+
+Now we will intersect the constraints coming from the a-decomposition (a=1,-1,5,-5).
+
+    Constraint from 1-decomposition: [1, -2]
+    Constraint from -1-decomposition: [1, -10]
+    Constraint from 5-decomposition: [1, -10]
+    Constraint from -5-decomposition: [1, -2]
+
+Intersecting all of these shows that 1-xy is in [1].
+This is a subset of N(5)! Hence 1-xy is in N(5)
+====================================================================================================
+                   CASE CONSIDERED: x~2, 1+x~1, y~-10, 1+y~-1
+====================================================================================================
+GOAL: check if 1-xy is necessarily in N(5).
+----------------------------------------------------------------------------------------------------
+Norm combinatorics shows that in this case we have the following:
+
+    5*x + 1 ~ 1
+    2*x + 1 ~ 1
+    x/5 + 1 ~ 1
+    -x + 1 ~ 1
+    -2*x + 1 ~ 1
+    -4*x + 1 ~ 1
+    -3*x + 1 ~ 1
+    3*x + 1 ~ 1
+    -x/5 + 1 ~ 1
+    -5*x + 1 ~ 1
+    4*x + 1 ~ 1
+
+    -2*y + 1 ~ 5
+    -5*y + 1 ~ -5
+    -3*y + 1 ~ -1
+    3*y + 1 ~ -5
+    -y + 1 ~ -5
+    -4*y + 1 ~ 1
+    2*y + 1 ~ 5
+    5*y + 1 ~ -1
+    4*y + 1 ~ 1
+
+(see the files DetermineValuesCase1.txt and DetermineValuesCase8.txt for details)
+
+Now we will intersect the constraints coming from the a-decomposition (a=1,-1,5,-5).
+
+    Constraint from 1-decomposition: [1, -10]
+    Constraint from -1-decomposition: [1, -10]
+    Constraint from 5-decomposition: [1, -2]
+    Constraint from -5-decomposition: [1, -2]
+
+Intersecting all of these shows that 1-xy is in [1].
+This is a subset of N(5)! Hence 1-xy is in N(5)
+====================================================================================================
+                   CASE CONSIDERED: x~2, 1+x~-5, y~2, 1+y~-5
+====================================================================================================
+GOAL: check if 1-xy is necessarily in N(5).
+----------------------------------------------------------------------------------------------------
+Norm combinatorics shows that in this case we have the following:
+
+    5*x + 1 ~ -5
+    2*x + 1 ~ 5
+    x/5 + 1 ~ -5
+    -x + 1 ~ -1
+    -2*x + 1 ~ 5
+    -4*x + 1 ~ 1
+    -3*x + 1 ~ -5
+    3*x + 1 ~ -1
+    -x/5 + 1 ~ -1
+    -5*x + 1 ~ -1
+    4*x + 1 ~ 1
+
+    -2*y + 1 ~ 5
+    -5*y + 1 ~ -1
+    -3*y + 1 ~ -5
+    3*y + 1 ~ -1
+    -y + 1 ~ -1
+    -4*y + 1 ~ 1
+    2*y + 1 ~ 5
+    5*y + 1 ~ -5
+    4*y + 1 ~ 1
+
+(see the files DetermineValuesCase2.txt and DetermineValuesCase2.txt for details)
+
+Now we will intersect the constraints coming from the a-decomposition (a=1,-1,5,-5).
+
+    Constraint from 1-decomposition: [10, -5, 5, -10]
+    Constraint from -1-decomposition: [10, -1, -2, 5]
+    Constraint from 5-decomposition: [2, -5, 5, -2]
+    Constraint from -5-decomposition: [-1, 2, 5, -10]
+
+Intersecting all of these shows that 1-xy is in [5].
+This is a subset of N(5)! Hence 1-xy is in N(5)
+====================================================================================================
+                   CASE CONSIDERED: x~2, 1+x~-5, y~-2, 1+y~1
+====================================================================================================
+GOAL: check if 1-xy is necessarily in N(5).
+----------------------------------------------------------------------------------------------------
+Norm combinatorics shows that in this case we have the following:
+
+    5*x + 1 ~ -5
+    2*x + 1 ~ 5
+    x/5 + 1 ~ -5
+    -x + 1 ~ -1
+    -2*x + 1 ~ 5
+    -4*x + 1 ~ 1
+    -3*x + 1 ~ -5
+    3*x + 1 ~ -1
+    -x/5 + 1 ~ -1
+    -5*x + 1 ~ -1
+    4*x + 1 ~ 1
+
+    -2*y + 1 ~ 1
+    -5*y + 1 ~ 1
+    -3*y + 1 ~ 1
+    3*y + 1 ~ 1
+    -y + 1 ~ 1
+    -4*y + 1 ~ 1
+    2*y + 1 ~ 1
+    5*y + 1 ~ 1
+    4*y + 1 ~ 1
+
+(see the files DetermineValuesCase2.txt and DetermineValuesCase3.txt for details)
+
+Now we will intersect the constraints coming from the a-decomposition (a=1,-1,5,-5).
+
+    Constraint from 1-decomposition: [1, 10]
+    Constraint from -1-decomposition: [1, 2]
+    Constraint from 5-decomposition: [1, 2]
+    Constraint from -5-decomposition: [1, 10]
+
+Intersecting all of these shows that 1-xy is in [1].
+This is a subset of N(5)! Hence 1-xy is in N(5)
+====================================================================================================
+                   CASE CONSIDERED: x~2, 1+x~-5, y~-2, 1+y~-1
+====================================================================================================
+GOAL: check if 1-xy is necessarily in N(5).
+----------------------------------------------------------------------------------------------------
+Norm combinatorics shows that in this case we have the following:
+
+    5*x + 1 ~ -5
+    2*x + 1 ~ 5
+    x/5 + 1 ~ -5
+    -x + 1 ~ -1
+    -2*x + 1 ~ 5
+    -4*x + 1 ~ 1
+    -3*x + 1 ~ -5
+    3*x + 1 ~ -1
+    -x/5 + 1 ~ -1
+    -5*x + 1 ~ -1
+    4*x + 1 ~ 1
+
+    -2*y + 1 ~ 5
+    -5*y + 1 ~ -5
+    -3*y + 1 ~ -1
+    3*y + 1 ~ -5
+    -y + 1 ~ -5
+    -4*y + 1 ~ 1
+    2*y + 1 ~ 5
+    5*y + 1 ~ -1
+    4*y + 1 ~ 1
+
+(see the files DetermineValuesCase2.txt and DetermineValuesCase4.txt for details)
+
+Now we will intersect the constraints coming from the a-decomposition (a=1,-1,5,-5).
+
+    Constraint from 1-decomposition: [2, 5]
+    Constraint from -1-decomposition: [2, 5]
+    Constraint from 5-decomposition: [10, 5]
+    Constraint from -5-decomposition: [10, 5]
+
+Intersecting all of these shows that 1-xy is in [5].
+This is a subset of N(5)! Hence 1-xy is in N(5)
+====================================================================================================
+                   CASE CONSIDERED: x~2, 1+x~-5, y~10, 1+y~1
+====================================================================================================
+GOAL: check if 1-xy is necessarily in N(5).
+----------------------------------------------------------------------------------------------------
+Norm combinatorics shows that in this case we have the following:
+
+    5*x + 1 ~ -5
+    2*x + 1 ~ 5
+    x/5 + 1 ~ -5
+    -x + 1 ~ -1
+    -2*x + 1 ~ 5
+    -4*x + 1 ~ 1
+    -3*x + 1 ~ -5
+    3*x + 1 ~ -1
+    -x/5 + 1 ~ -1
+    -5*x + 1 ~ -1
+    4*x + 1 ~ 1
+
+    -2*y + 1 ~ 1
+    -5*y + 1 ~ 1
+    -3*y + 1 ~ 1
+    3*y + 1 ~ 1
+    -y + 1 ~ 1
+    -4*y + 1 ~ 1
+    2*y + 1 ~ 1
+    5*y + 1 ~ 1
+    4*y + 1 ~ 1
+
+(see the files DetermineValuesCase2.txt and DetermineValuesCase5.txt for details)
+
+Now we will intersect the constraints coming from the a-decomposition (a=1,-1,5,-5).
+
+    Constraint from 1-decomposition: [1, -5]
+    Constraint from -1-decomposition: [1, -1]
+    Constraint from 5-decomposition: [1, -5]
+    Constraint from -5-decomposition: [1, -1]
+
+Intersecting all of these shows that 1-xy is in [1].
+This is a subset of N(5)! Hence 1-xy is in N(5)
+====================================================================================================
+                   CASE CONSIDERED: x~2, 1+x~-5, y~10, 1+y~-5
+====================================================================================================
+GOAL: check if 1-xy is necessarily in N(5).
+----------------------------------------------------------------------------------------------------
+Norm combinatorics shows that in this case we have the following:
+
+    5*x + 1 ~ -5
+    2*x + 1 ~ 5
+    x/5 + 1 ~ -5
+    -x + 1 ~ -1
+    -2*x + 1 ~ 5
+    -4*x + 1 ~ 1
+    -3*x + 1 ~ -5
+    3*x + 1 ~ -1
+    -x/5 + 1 ~ -1
+    -5*x + 1 ~ -1
+    4*x + 1 ~ 1
+
+    -2*y + 1 ~ 5
+    -5*y + 1 ~ -1
+    -3*y + 1 ~ -5
+    3*y + 1 ~ -1
+    -y + 1 ~ -1
+    -4*y + 1 ~ 1
+    2*y + 1 ~ 5
+    5*y + 1 ~ -5
+    4*y + 1 ~ 1
+
+(see the files DetermineValuesCase2.txt and DetermineValuesCase6.txt for details)
+
+Now we will intersect the constraints coming from the a-decomposition (a=1,-1,5,-5).
+
+    Constraint from 1-decomposition: [-5, 5]
+    Constraint from -1-decomposition: [5, -1]
+    Constraint from 5-decomposition: [-5, 5]
+    Constraint from -5-decomposition: [5, -1]
+
+Intersecting all of these shows that 1-xy is in [5].
+This is a subset of N(5)! Hence 1-xy is in N(5)
+====================================================================================================
+                   CASE CONSIDERED: x~2, 1+x~-5, y~-10, 1+y~1
+====================================================================================================
+GOAL: check if 1-xy is necessarily in N(5).
+----------------------------------------------------------------------------------------------------
+Norm combinatorics shows that in this case we have the following:
+
+    5*x + 1 ~ -5
+    2*x + 1 ~ 5
+    x/5 + 1 ~ -5
+    -x + 1 ~ -1
+    -2*x + 1 ~ 5
+    -4*x + 1 ~ 1
+    -3*x + 1 ~ -5
+    3*x + 1 ~ -1
+    -x/5 + 1 ~ -1
+    -5*x + 1 ~ -1
+    4*x + 1 ~ 1
+
+    -2*y + 1 ~ 1
+    -5*y + 1 ~ 1
+    -3*y + 1 ~ 1
+    3*y + 1 ~ 1
+    -y + 1 ~ 1
+    -4*y + 1 ~ 1
+    2*y + 1 ~ 1
+    5*y + 1 ~ 1
+    4*y + 1 ~ 1
+
+(see the files DetermineValuesCase2.txt and DetermineValuesCase7.txt for details)
+
+Now we will intersect the constraints coming from the a-decomposition (a=1,-1,5,-5).
+
+    Constraint from 1-decomposition: [1, -2]
+    Constraint from -1-decomposition: [1, -2]
+    Constraint from 5-decomposition: [1, -10]
+    Constraint from -5-decomposition: [1, -10]
+
+Intersecting all of these shows that 1-xy is in [1].
+This is a subset of N(5)! Hence 1-xy is in N(5)
+====================================================================================================
+                   CASE CONSIDERED: x~2, 1+x~-5, y~-10, 1+y~-1
+====================================================================================================
+GOAL: check if 1-xy is necessarily in N(5).
+----------------------------------------------------------------------------------------------------
+Norm combinatorics shows that in this case we have the following:
+
+    5*x + 1 ~ -5
+    2*x + 1 ~ 5
+    x/5 + 1 ~ -5
+    -x + 1 ~ -1
+    -2*x + 1 ~ 5
+    -4*x + 1 ~ 1
+    -3*x + 1 ~ -5
+    3*x + 1 ~ -1
+    -x/5 + 1 ~ -1
+    -5*x + 1 ~ -1
+    4*x + 1 ~ 1
+
+    -2*y + 1 ~ 5
+    -5*y + 1 ~ -5
+    -3*y + 1 ~ -1
+    3*y + 1 ~ -5
+    -y + 1 ~ -5
+    -4*y + 1 ~ 1
+    2*y + 1 ~ 5
+    5*y + 1 ~ -1
+    4*y + 1 ~ 1
+
+(see the files DetermineValuesCase2.txt and DetermineValuesCase8.txt for details)
+
+Now we will intersect the constraints coming from the a-decomposition (a=1,-1,5,-5).
+
+    Constraint from 1-decomposition: [5, -2]
+    Constraint from -1-decomposition: [5, -10]
+    Constraint from 5-decomposition: [5, -10]
+    Constraint from -5-decomposition: [5, -2]
+
+Intersecting all of these shows that 1-xy is in [5].
+This is a subset of N(5)! Hence 1-xy is in N(5)
+====================================================================================================
+====================================================================================================
+
+All cases have been succesfully verified. This completes the proof. QED.
+
+====================================================================================================
+====================================================================================================

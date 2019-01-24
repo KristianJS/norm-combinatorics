@@ -1,0 +1,164 @@
+====================================================================================================
+                        CASE CONSIDERED: x~-10, 1+x~-1
+====================================================================================================
+GOAL: determine values of 1+kx for various integers k.
+We'll do them one at a time.
+====================================================================================================
+            *** Attempting to pin down value of 1+2x (mod squares). ***
+
+This is what we know so far:
+
+    x ~ -10, x + 1 ~ -1.
+
+Applying first-order constraints shows that the possible values of 2*x + 1 are: [5, -1].
+Thus first-order constraints did not suffice to pin down the value uniquely.
+Let's attempt second-order constraints as well.
+----------------------------------------------------------------------------------------------------
+Assume that 2*x + 1 ~ 5.
+
+Given 2*x + 1 ~ 5, first-order constraints show that 3*x + 1 must be in [-5].
+Let's consider each possibility in turn.
+    Assume 3*x + 1 ~ -5.
+    ---> No contradictions obtained via second order constraints.
+
+Hence the possibility that 2*x + 1 ~ 5 cannot be ruled out.
+----------------------------------------------------------------------------------------------------
+Assume that 2*x + 1 ~ -1.
+
+Given 2*x + 1 ~ -1, first-order constraints show that 3*x + 1 must be in [2].
+Let's consider each possibility in turn.
+    Assume 3*x + 1 ~ 2.
+    ---> Contradiction obtained! 3*x + 1 can't be 2. Contradiction was found by considering 4*x + 1.
+         (In this case, we have the following assumptions in place:
+          {2*x + 1: -1, 3*x + 1: 2, x: -10, x + 1: -1}
+          Use the basic constraints on 4*x + 1 coming from these.)
+
+Hence we have ruled out the possibility that 2*x + 1 ~ -1!
+----------------------------------------------------------------------------------------------------
+Conclusion: x ~ -10, x + 1 ~ -1 ==> 2*x + 1 ~ 5
+====================================================================================================
+====================================================================================================
+            *** Attempting to pin down value of 1+3x (mod squares). ***
+
+This is what we know so far:
+
+    2*x + 1 ~ 5, x ~ -10, x + 1 ~ -1.
+
+Applying first-order constraints shows that the possible values of 3*x + 1 are: [-5].
+Didn't need to do anything extra!
+----------------------------------------------------------------------------------------------------
+Conclusion: x ~ -10, x + 1 ~ -1 ==> 3*x + 1 ~ -5.
+====================================================================================================
+            *** Attempting to pin down value of 1+4x (mod squares). ***
+
+This is what we know so far:
+
+    2*x + 1 ~ 5, 3*x + 1 ~ -5, x ~ -10, x + 1 ~ -1.
+
+Applying first-order constraints shows that the possible values of 4*x + 1 are: [1].
+Didn't need to do anything extra!
+----------------------------------------------------------------------------------------------------
+Conclusion: x ~ -10, x + 1 ~ -1 ==> 4*x + 1 ~ 1.
+====================================================================================================
+            *** Attempting to pin down value of 1+5x (mod squares). ***
+
+This is what we know so far:
+
+    2*x + 1 ~ 5, 3*x + 1 ~ -5, x ~ -10, x + 1 ~ -1, 4*x + 1 ~ 1.
+
+Applying first-order constraints shows that the possible values of 5*x + 1 are: [-1].
+Didn't need to do anything extra!
+----------------------------------------------------------------------------------------------------
+Conclusion: x ~ -10, x + 1 ~ -1 ==> 5*x + 1 ~ -1.
+====================================================================================================
+            *** Attempting to pin down value of 1-2x (mod squares). ***
+
+This is what we know so far:
+
+    5*x + 1 ~ -1, 2*x + 1 ~ 5, x ~ -10, 3*x + 1 ~ -5, x + 1 ~ -1, 4*x + 1 ~ 1.
+
+Applying first-order constraints shows that the possible values of -2*x + 1 are: [5].
+Didn't need to do anything extra!
+----------------------------------------------------------------------------------------------------
+Conclusion: x ~ -10, x + 1 ~ -1 ==> -2*x + 1 ~ 5.
+====================================================================================================
+            *** Attempting to pin down value of 1-3x (mod squares). ***
+
+This is what we know so far:
+
+    5*x + 1 ~ -1, 2*x + 1 ~ 5, x ~ -10, -2*x + 1 ~ 5, 3*x + 1 ~ -5, x + 1 ~ -1, 4*x + 1 ~ 1.
+
+Applying first-order constraints shows that the possible values of -3*x + 1 are: [-1].
+Didn't need to do anything extra!
+----------------------------------------------------------------------------------------------------
+Conclusion: x ~ -10, x + 1 ~ -1 ==> -3*x + 1 ~ -1.
+====================================================================================================
+            *** Attempting to pin down value of 1-4x (mod squares). ***
+
+This is what we know so far:
+
+    5*x + 1 ~ -1, 2*x + 1 ~ 5, x ~ -10, -2*x + 1 ~ 5, -3*x + 1 ~ -1, 3*x + 1 ~ -5, x + 1 ~ -1, 4*x + 1 ~ 1.
+
+Applying first-order constraints shows that the possible values of -4*x + 1 are: [1].
+Didn't need to do anything extra!
+----------------------------------------------------------------------------------------------------
+Conclusion: x ~ -10, x + 1 ~ -1 ==> -4*x + 1 ~ 1.
+====================================================================================================
+            *** Attempting to pin down value of 1-5x (mod squares). ***
+
+This is what we know so far:
+
+    5*x + 1 ~ -1, 2*x + 1 ~ 5, x ~ -10, -2*x + 1 ~ 5, -4*x + 1 ~ 1, -3*x + 1 ~ -1, 3*x + 1 ~ -5, x + 1 ~ -1, 4*x + 1 ~ 1.
+
+Applying first-order constraints shows that the possible values of -5*x + 1 are: [-5].
+Didn't need to do anything extra!
+----------------------------------------------------------------------------------------------------
+Conclusion: x ~ -10, x + 1 ~ -1 ==> -5*x + 1 ~ -5.
+====================================================================================================
+            *** Attempting to pin down value of 1-x (mod squares). ***
+
+This is what we know so far:
+
+    5*x + 1 ~ -1, 2*x + 1 ~ 5, x ~ -10, -2*x + 1 ~ 5, -4*x + 1 ~ 1, -3*x + 1 ~ -1, 3*x + 1 ~ -5, x + 1 ~ -1, -5*x + 1 ~ -5, 4*x + 1 ~ 1.
+
+Applying first-order constraints shows that the possible values of -x + 1 are: [-5].
+Didn't need to do anything extra!
+----------------------------------------------------------------------------------------------------
+Conclusion: x ~ -10, x + 1 ~ -1 ==> -x + 1 ~ -5.
+====================================================================================================
+            *** Attempting to pin down value of 5+x (mod squares). ***
+
+This is what we know so far:
+
+    5*x + 1 ~ -1, 2*x + 1 ~ 5, x ~ -10, -x + 1 ~ -5, -2*x + 1 ~ 5, -4*x + 1 ~ 1, -3*x + 1 ~ -1, 3*x + 1 ~ -5, x + 1 ~ -1, -5*x + 1 ~ -5, 4*x + 1 ~ 1.
+
+First-order constraints show that 5+x ~ -5
+----------------------------------------------------------------------------------------------------
+Conclusion: x ~ -10, x + 1 ~ -1 ==> x + 5 ~ -5
+                               ==> x/5 + 1 ~ -1.
+====================================================================================================
+            *** Attempting to pin down value of -5+x (mod squares). ***
+
+This is what we know so far:
+
+    5*x + 1 ~ -1, 2*x + 1 ~ 5, x/5 + 1 ~ -1, x ~ -10, -x + 1 ~ -5, -2*x + 1 ~ 5, -4*x + 1 ~ 1, -3*x + 1 ~ -1, 3*x + 1 ~ -5, x + 1 ~ -1, -5*x + 1 ~ -5, 4*x + 1 ~ 1.
+
+First-order constraints show that -5+x ~ 1
+----------------------------------------------------------------------------------------------------
+Conclusion: x ~ -10, x + 1 ~ -1 ==> x - 5 ~ 1
+                               ==> -x/5 + 1 ~ -5.
+====================================================================================================
+====================================================================================================
+In summary, we have that in this case, norm combinatorics implies:
+    5*x + 1 ~ -1
+    2*x + 1 ~ 5
+    x/5 + 1 ~ -1
+    -x + 1 ~ -5
+    -2*x + 1 ~ 5
+    -4*x + 1 ~ 1
+    -3*x + 1 ~ -1
+    3*x + 1 ~ -5
+    -x/5 + 1 ~ -5
+    -5*x + 1 ~ -5
+    4*x + 1 ~ 1
+====================================================================================================
