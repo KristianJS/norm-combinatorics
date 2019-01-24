@@ -21,18 +21,18 @@ is a valuation, by verifying the criteria of Lemma 4.1 in all possible cases.
 We simply enumerate all the cases of pairs x,y in O_1 and check the criteria as follows:
 
     1) Norm combinatorics is first used to evaluate 1+kx, 1+ky for k=2,3,4,5,-1,-2,-3,-4,-5,1/5,-1/5
-    2) Then the a-decompositions (see Appendix A) for a=1,-1,5,-5 are intersected.
+    2) Then the decompositions D_a(x,y) for a=1,-1,5,-5 are intersected.
     3) The resulting set is examined: if it's a subset of N(5) this case has been verified.
     
 If all cases are verified, the proof is complete.
 
 The computations are output in several text-files.
 
- * determine_case_n.txt (n=1,...,8) ---> this file shows the computations that work out the values
-                                         of 1+kx for various k, in case n
+ * DetermineValuesCaseN.txt (N=1,...,8) ---> this file shows the computations that work out the values
+                                             of 1+kx for various k, in case n
                                          
- * verify_cases.txt -------------------> this file shows the verification of the norm criteria of
-                                         Lemma 4.1 in all cases, proving Lemma 4.6.
+ * ProofOfProposition.txt ------------ ----> this file shows the verification of the norm criteria of
+                                             Lemma 4.1 in all cases, proving Lemma 4.6.
                                          
 Therefore the 9 text files produced give a full proof.
 
