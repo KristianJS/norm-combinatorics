@@ -105,6 +105,7 @@ def f(a,b):
 #Calculates norm-group associated with decomposition y = 1 + nx = (1 + mx) + (n - m)x.
 #In other words, given such a y, the function returns the possible square values of y from the
 #two constraints due to y=1+mx and y=(1+mx)+(n-m)x, for some integers m and n. 
+#This is therefore computing the set C^n_m(x) defined in the paper.
 def norm_com(a, b, n, m):  
 
     #Here a = x, b = 1+mx
@@ -133,7 +134,7 @@ def norm_com(a, b, n, m):
 #   n+x=mb*[a square]-(1/m)+n = (nm-1)/m + mb*[a square]
 #
 #and this final expression lives in m(nm-1)N((nm-1)b)
-#
+#This is therefore computing the set F^n_m(x) defined in the paper.
 #Here a=x, b=1+mx
 def norm_com_frac(a, b, n, m):
 
@@ -157,6 +158,7 @@ def norm_com_frac(a, b, n, m):
 #        = (1+ax)[1+(1+ay)*(-ax/(1+ax))]
 #
 #Here b=1+ay, c=1+ax.
+#This is therefore computing the set D_a(x,y) defined in the paper.
 def decomposition_a(x, y, a, b, c):
 
     #The basic constraint from 1-xy being in Norm(xy)
