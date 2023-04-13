@@ -42,7 +42,7 @@ def determine_values(case, casenum):
     
     #File where output gets written to
     f = open('DetermineValuesCase%s.txt' % casenum, 'w+')
-    
+
     
     #If this input came from a 'y' case, we switch it to an x
     if y in list(C.keys()):
@@ -149,7 +149,6 @@ def check_valuation_criterion(case_x, case_y, casenums, outfile):
     #First get all the info on 1+kx, 1+ky from norm combinatorics
     C_x = determine_values(C_x, casenum_x)
     C_y = determine_values(C_y, casenum_y)
-
     
     f.write("Norm combinatorics shows that in this case we have the following:\n")
     f.write('\n')
@@ -179,7 +178,7 @@ def check_valuation_criterion(case_x, case_y, casenums, outfile):
     for a in [1, -1, 5, -5]:
     
         #Constraint from the a-decomposition
-        new_constraint = decomposition_a(C_x[x], C_y[y], a, C_y[1+a*y], C_x[1+a*x])
+        new_constraint = decomposition_a(C_x[x], C_y[y], a, C_y[1+a*y], C_x[1+a*x], C_y[1+(y/a)], C_x[1+(x/a)])
         f.write("    Constraint from D_{%s}(x,y): %s\n" % (a, list(new_constraint)))
         
         possible_vals = possible_vals.intersection(set(new_constraint))
