@@ -70,7 +70,7 @@ def norm_combinatorics_int(known_cases, N, outfile):
     
     string = '    '
     basicstring = string + '%r ~ %s, %r ~ %s' % (x, C[x], 1+x, C[1+x])
-    for key in C.keys():
+    for key in list(C.keys()):
         string += '%r ~ %s, ' % (key, C[key])
 
     f.write('\n' + string[:-2] + '.\n')
@@ -180,16 +180,16 @@ def norm_combinatorics_int(known_cases, N, outfile):
             #value of 1+Nx
             
             if constraints_list == []:
-		        
-		        f.write("    ---> Contradiction obtained! Intersecting the constraints on %r gives the empty set.\n" % (1+(N+1)*x))
-		        f.write("    (In this case, we have the following assumptions in place:\n")
-		        f.write("     %s\n" % C_new)
-		        f.write("     Use the basic constraints on %r coming from these.)\n" % (1+(N+1)*x))
-		        f.write('\n')
-		        f.write("Hence the possibility that %r ~ %s can be ruled out.\n" % (1+N*x, val))
+                
+                f.write("    ---> Contradiction obtained! Intersecting the constraints on %r gives the empty set.\n" % (1+(N+1)*x))
+                f.write("    (In this case, we have the following assumptions in place:\n")
+                f.write("     %s\n" % C_new)
+                f.write("     Use the basic constraints on %r coming from these.)\n" % (1+(N+1)*x))
+                f.write('\n')
+                f.write("Hence the possibility that %r ~ %s can be ruled out.\n" % (1+N*x, val))
                 
 
-		    #Otherwise we need to go deeper still
+            #Otherwise we need to go deeper still
             else:
                 f.write("Given %r ~ %s, first-order constraints show that %r must be in " \
                          % (1+N*x, val, 1+(N+1)*x) + str(constraints_list) + '.\n')
@@ -328,7 +328,7 @@ def norm_combinatorics_frac(known_cases, N, outfile):
     
     string = '    '
     basicstring = string + '%r ~ %s, %r ~ %s' % (x, C[x], 1+x, C[1+x])
-    for key in C.keys():
+    for key in list(C.keys()):
         string += '%r ~ %s, ' % (key, C[key])
 
     f.write(string[:-2] + '.\n')

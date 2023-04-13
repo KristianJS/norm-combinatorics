@@ -53,8 +53,8 @@ case_8 = {x : -10, 1+x : -1}
 #                                 Proceeding as outlined
 #####################################################################################################
 
-print 100*'='
-print "Generating proof of Proposition 4.6..."
+print(100*'=')
+print("Generating proof of Proposition 4.6...")
 
 
 #We increment verified_cases for each succesfully verified case
@@ -124,12 +124,12 @@ if verified_cases == len(pairs):
     f.write('\n')
     f.write(100*'=' + '\n')
     f.write(100*'=') 
-    print "Success! Proof details have been logged in ProofOfProposition.txt"
-    print 100*'='
+    print("Success! Proof details have been logged in ProofOfProposition.txt")
+    print(100*'=')
 else:
     f.write("Failed to verify all cases. Proof was not succesful!\n")
-    print "Proof did not succeed!"
-    print 100*'='
+    print("Proof did not succeed!")
+    print(100*'=')
 
 #Close the file
 f.close()

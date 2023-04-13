@@ -186,7 +186,7 @@ def swap_x_to_y(case):
     sym_swap = y
   
     #If a 'y' is already in there we don't need to swap
-    if y in case.keys():
+    if y in list(case.keys()):
         return case
     else:
   
@@ -214,7 +214,7 @@ def swap_y_to_x(case):
     sym_swap = x
   
     #If an 'x' is already in there we don't need to swap
-    if x in case.keys():
+    if x in list(case.keys()):
         return case
     else:
   

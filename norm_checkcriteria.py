@@ -45,7 +45,7 @@ def determine_values(case, casenum):
     
     
     #If this input came from a 'y' case, we switch it to an x
-    if y in C.keys():
+    if y in list(C.keys()):
         C = swap_y_to_x(C)
         swap_back = True
     else:
@@ -89,7 +89,7 @@ def determine_values(case, casenum):
     
     #Summarize what we have learned
     string = '    '
-    for key in C.keys():
+    for key in list(C.keys()):
         string += '%r ~ %s, ' % (key, C[key])
 
     
@@ -98,7 +98,7 @@ def determine_values(case, casenum):
     f.write(100*'=')
     f.write('\n')
     f.write("In summary, we have that in this case, norm combinatorics implies:\n")
-    for key in C.keys():
+    for key in list(C.keys()):
         if key in [x, 1+x]:
             pass
         else:
@@ -153,13 +153,13 @@ def check_valuation_criterion(case_x, case_y, casenums, outfile):
     
     f.write("Norm combinatorics shows that in this case we have the following:\n")
     f.write('\n')
-    for key in C_x.keys():
+    for key in list(C_x.keys()):
         if key in [x, 1+x]:
             pass
         else:
             f.write('    %r ~ %s\n' % (key, C_x[key]))
     f.write('\n')
-    for key in C_y.keys():
+    for key in list(C_y.keys()):
         if key in [y, 1+y]:
             pass
         else:
