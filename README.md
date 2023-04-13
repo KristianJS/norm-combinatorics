@@ -16,7 +16,9 @@ The algorithm is described in the paper.
 *** REQUIRED PACKAGES ***
 
 The only necessary package is sympy: https://www.sympy.org/en/index.html
+
 With conda/mamba, this can be installed with 'conda install sympy'.
+
 
 *** HOW TO USE THESE SCRIPTS ***
 
