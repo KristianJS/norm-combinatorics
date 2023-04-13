@@ -154,19 +154,19 @@ def norm_com_frac(a, b, n, m):
 #Given a choice of values (mod squares) of x, 1+x, 1+y, this function works out the possible 
 #square values of 1-xy using the a-decomposition (a = +-1, +-2, +-3, +-4, +-5):
 #
-#   1-xy = (1+ay)[1+(1+ax)*(-ay/(1+ay))]
-#        = (1+ax)[1+(1+ay)*(-ax/(1+ax))]
+#   1-xy = (1+ay)[1+(1+x/a)*(-ay/(1+ay))]
+#        = (1+ax)[1+(1+y/a)*(-ax/(1+ax))]
 #
-#Here b=1+ay, c=1+ax.
+#Here b=1+ay, b2=1+y/a, c=1+ax, c2=1+x/a
 #This is therefore computing the set D_a(x,y) defined in the paper.
-def decomposition_a(x, y, a, b, c):
+def decomposition_a(x, y, a, b, c, b2, c2):
 
     #The basic constraint from 1-xy being in Norm(xy)
     constraint_1 = Norm(f(x,y))
     
     #The two constraints coming from the a-decomposition
-    constraint_2 = normul(b, Norm(f(c, b*a*y)))
-    constraint_3 = normul(c, Norm(f(b, c*a*x)))
+    constraint_2 = normul(b, Norm(f(c2, b*a*y)))
+    constraint_3 = normul(c, Norm(f(b2, c*a*x)))
     
     #Intersect all these constraints
     intersection_1 = set(constraint_1).intersection(set(constraint_2))
@@ -192,13 +192,20 @@ def swap_x_to_y(case):
   
         case_copy = copy.deepcopy(case)
         case_swap = {}
-    
-        known_scalars = [scalar for scalar in [1,2,3,4,5,-1,-2,-3,-4,-5,1/5,-1/5] \
-                                           if 1+scalar*x in case]
-                                           
+   
+  
+        known_scalars = [scalar for scalar in [1,2,3,4,5,-1,-2,-3,-4,-5] \
+                                           if (1+scalar*x in case)]
+        known_scalars_frac = [scalar for scalar in [1,2,3,4,5,-1,-2,-3,-4,-5] \
+                                           if (1+x/scalar in case)]
+
+
         for k in known_scalars:
             case_swap[sym_swap] = case_copy[sym]
             case_swap[1+k*sym_swap] = case_copy[1+k*sym]
+        for k in known_scalars_frac:
+            case_swap[sym_swap] = case_copy[sym]
+            case_swap[1+sym_swap/k] = case_copy[1+sym/k]
     
         return case_swap
         
