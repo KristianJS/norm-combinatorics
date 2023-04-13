@@ -32,7 +32,7 @@ The computations are output in several text-files.
                                              of 1+kx for various k, in case n
                                          
  * ProofOfProposition.txt ------------ ----> this file shows the verification of the norm criteria of
-                                             Lemma 4.1 in all cases, proving Lemma 4.6.
+                                             Proposition 4.5 in all cases, they key step in proving Corollary 4.6.
                                          
 Therefore the 9 text files produced give a full proof.
 
@@ -54,7 +54,7 @@ case_8 = {x : -10, 1+x : -1}
 #####################################################################################################
 
 print(100*'=')
-print("Generating proof of Proposition 4.6...")
+print("Generating proof of Proposition 4.5...")
 
 
 #We increment verified_cases for each succesfully verified case
@@ -70,7 +70,7 @@ f.write(100*'=' + '\n')
 f.write(100*'=' + '\n')
 f.write(100*'=' + '\n')
 f.write('\n')
-f.write(35*' ' + "PROOF OF PROPOSITION 4.6\n")
+f.write(35*' ' + "PROOF OF PROPOSITION 4.5\n")
 f.write('\n')
 f.write(100*'=' + '\n')
 f.write(100*'=' + '\n')
